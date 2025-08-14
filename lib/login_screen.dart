@@ -59,8 +59,10 @@ class _LoginFormState extends State<LoginForm> {
               const SizedBox(height: 8),
               TextField(
                 controller: _usernameController,
-                decoration: InputDecoration(border: OutlineInputBorder(),
-                errorText: _usernameHasError ? "Falscher Username" : null),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  errorText: _usernameHasError ? "Falscher Username" : null,
+                ),
               ),
               const SizedBox(height: 16),
               const Text("Password"),
@@ -68,8 +70,10 @@ class _LoginFormState extends State<LoginForm> {
               TextField(
                 controller: _passwordController,
                 obscureText: true,
-                decoration: InputDecoration(border: OutlineInputBorder(),
-                errorText: _passwordHasError ? "Falsches Passwort" : null),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  errorText: _passwordHasError ? "Falsches Passwort" : null,
+                ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
